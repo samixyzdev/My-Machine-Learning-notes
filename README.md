@@ -28,6 +28,15 @@ for i in range(1, cols * rows + 1):
     plt.imshow(img.squeeze(), cmap="gray")
 plt.show()
 
+train_dataset, val_dataset = random_split(dataset, [80, 20])
+train_loader = DataLoader(dataset=train_dataset, batch_size=16)
+val_loader = DataLoader(dataset=val_dataset, batch_size=20)
+/*
+*
+*loading one batch for each loop
+*
+*/
+
 2. Utils
 too many funcitons, not so interesting.
 Found another interesting blog, https://huggingface.co/blog/dvgodoy/beginner-pytorch-tutorial?utm_source=chatgpt.com.
@@ -36,3 +45,10 @@ Found another interesting blog, https://huggingface.co/blog/dvgodoy/beginner-pyt
 learned about the difference between GPU tensor and CPU tensor(Numpy)
 " In PyTorch, every method that ends with an underscore (_) makes changes in-place, meaning, they will modify the underlying variable. "
 torch.no_grad() : tell PyTorch to “back off” and let us update our parameters without messing up with its fancy dynamic computation graph
+
+7/8/2025
+finished my first ML competiton on Kaggle
+
+7/14/2025
+some C++ learning notes:
+std:vector do not have push_front, I can only use insert(v.begin(), obj)
