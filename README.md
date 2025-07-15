@@ -52,3 +52,12 @@ finished my first ML competiton on Kaggle
 7/14/2025
 some C++ learning notes:
 std:vector do not have push_front, I can only use insert(v.begin(), obj)
+
+7/15/2025
+
+some advanced usage of sort: assending order based on the second element
+
+sort(points.begin(), points.end(),
+     [](const vector<int>& a, const vector<int>& b) {
+         return a[1] < b[1];
+     });
