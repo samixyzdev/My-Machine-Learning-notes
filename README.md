@@ -7,6 +7,7 @@
 - [7/14/2025](#7142025)
 - [7/15/2025](#7152025)
 - [7/16/2025](#7162025)
+- [7/17/2025](#7172025)
 
 **I finally decided to put some efforts into learning pytorch. I am writing this notes and making this public for anyone who are interest about me.**
 
@@ -74,3 +75,20 @@ sort(points.begin(), points.end(),
    1. Token embeddings: A [CLS] token is added to the input word tokens at the beginning of the first sentence and a [SEP] token is inserted at the end of each sentence.
    2. Segment embeddings:A marker indicating Sentence A or Sentence B is added to each token. This allows the encoder to distinguish between sentences.
    3. Positional embeddings:A positional embedding is added to each token to indicate its position in the sentence.
+
+# 7/17/2025
+I was trying to use a List in CPP as a stack, but I found out that I could only use std:vector or std:stack:
+#include <vector>
+
+std::vector<char> stack;
+add elements：stack.push_back('(');
+pop elements：stack.pop_back();
+visit top：stack.back();
+
+#include <stack>
+
+std::stack<char> stack;
+
+add elements：stack.push('(');
+pop elements：stack.pop();
+visit top：stack.top();
