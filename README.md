@@ -8,6 +8,7 @@
 - [7/15/2025](#7152025)
 - [7/16/2025](#7162025)
 - [7/17/2025](#7172025)
+- [7/17/2025](#7172025-1)
 
 **I finally decided to put some efforts into learning pytorch. I am writing this notes and making this public for anyone who are interest about me.**
 
@@ -92,3 +93,10 @@ std::stack<char> stack;
 add elements：stack.push('(');
 pop elements：stack.pop();
 visit top：stack.top();
+
+# 7/17/2025
+Encountered one problem in Leetcode. The questions was initially asking me to simplify a path, but I found spliting a string is kind of a problem in C++. As far as I know, it is easy to do it in Python using split funciton. 
+
+I learned that I can use stringstream ss(path) and getline function to achieve the same thing:
+std::getline(istream& is, string& str);
+std::getline(istream& is, string& str, char delim);
