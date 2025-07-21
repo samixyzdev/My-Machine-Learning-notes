@@ -9,6 +9,7 @@
 - [7/16/2025](#7162025)
 - [7/17/2025](#7172025)
 - [7/17/2025](#7172025-1)
+- [7/21/2025](#7212025)
 
 **I finally decided to put some efforts into learning pytorch. I am writing this notes and making this public for anyone who are interest about me.**
 
@@ -100,3 +101,6 @@ Encountered one problem in Leetcode. The questions was initially asking me to si
 I learned that I can use stringstream ss(path) and getline function to achieve the same thing:
 std::getline(istream& is, string& str);
 std::getline(istream& is, string& str, char delim);
+
+# 7/21/2025
+start self-learning CS336
