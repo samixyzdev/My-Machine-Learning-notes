@@ -10,6 +10,7 @@
 - [7/17/2025](#7172025)
 - [7/17/2025](#7172025-1)
 - [7/21/2025](#7212025)
+- [7/28/2025](#7282025)
 
 **I finally decided to put some efforts into learning pytorch. I am writing this notes and making this public for anyone who are interest about me.**
 
@@ -104,3 +105,11 @@ std::getline(istream& is, string& str, char delim);
 
 # 7/21/2025
 start self-learning CS336
+
+# 7/28/2025
+Last week, I finished implementing a BPE training function, and a tokenizer class still awaits me to build. Fun but a bit tough task for me.
+
+I would like to make some notes of the difference between C++ and Python as I made those errors in coding questions
+**C++ do not use : to star a block, this mistake sounds insane but I actually typed it when coding**
+**C++ use try and catch block, but do not use try and except**
+**It is not valid to use vec[-1] for accessing the last element in an vector in C++**
